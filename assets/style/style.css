@@ -1,0 +1,110 @@
+:root{
+    --brand-color: #FF0000;
+    --azul:#009cde;
+    --botao:#009cde;
+}
+.navbar{
+    box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+.inf{
+    background: #29794C;
+    color: white;
+}
+ 
+.jumbotron{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../image/persiana2.jpg") ;
+    color: white;
+    height: 100vh;
+    margin-top: 120px; 
+}
+.jumbotron h3{
+    color:#dedede;
+    font-weight: 300;
+}
+.jumbotron__botoes button{
+width: 220px;
+}
+.card{
+    border: 0px;
+    box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+}
+.btn-danger{
+    background: var(--brand-color);
+}
+hr{
+    border: 1px solid #808080;
+    width: 85px;
+}
+.card-title{
+    font-size: 22px;
+}
+.texto hr{
+    border-color:var(--azul) ;
+}
+.btn-info{
+    background: var(--botao);
+width: 280px!important;
+}
+.desfecho{
+    color: white;
+    background: #29794C;
+}
+.desfecho hr{
+    width: 188px;
+    border-color: white ;
+}
+.quadrado{
+    background:  #b50107;
+    color: white;
+}
+.quadrado p{
+    font-size: 40px;
+}
+.row{
+    font-size: 30px;
+}
+.row i{
+    font-size: 60px;
+    color:  #29794C;
+}
+.whatsapp-fixo {
+    position: fixed;
+    bottom:35px;
+    right:35px;
+    z-index: 997;
+    text-align: right;
+}
+.whatsapp-fixo a {
+    text-decoration: none;
+}
+.whatsapp-description{
+    text-align: center;
+    /*height: 0;*/
+    display: none;
+    background: #2FA162;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    overflow: hidden;
+    transition: opacity 0.3s, height 0.3s ease;
+}
+.whatsapp-description p{
+    margin: none !important;
+    line-height: 1.8;
+}
+.whatsapp-fixo:hover > .whatsapp-description{
+    /*display: block;*/
+    height: auto;
+    /* opacity: 100%; */
+    display: block;
+    transition: opacity 0.3s, height 0.3s ease;
+}
+@media(max-width: 576px){
+    .inf{
+        display: none!important;
+    }
+}
